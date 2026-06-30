@@ -11,7 +11,7 @@ app.listen(PORT, () => {  //me
 });
 
 const sequelize = require('./config/db');
-const Mess = require('./models/Mess');
+const Mess = require('./models/mess');
 const profileRoutes = require('./routes/auth');
 
 app.use(express.json());
