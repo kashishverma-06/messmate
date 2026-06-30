@@ -6,6 +6,9 @@ require('dotenv').config();
 console.log(process.env.JWT_SECRET);
 
 const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {  //me
+  console.log(`Server running on port ${PORT}`);  //me 
+});
 
 const sequelize = require('./config/db');
 const Mess = require('./models/Mess');

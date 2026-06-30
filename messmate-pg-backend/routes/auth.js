@@ -66,16 +66,16 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.get("/profile", (req, res) => {
-  console.log("PROFILE ROUTE HIT");
-  res.json({ message: "profile working" });
-});
+// router.get("/profile", (req, res) => {
+//   console.log("PROFILE ROUTE HIT");
+//   res.json({ message: "profile working" });
+// });
 
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+//const router = express.Router();
 
-const authMiddleware = require("../middleware/authMiddleware");
-const User = require("../models/User");
+//const authMiddleware = require("../middleware/authMiddleware");
+//const User = require("../models/User");
 
 router.get("/profile", authMiddleware, async (req, res) => {
   try {
